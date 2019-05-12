@@ -73,9 +73,9 @@
 		F524BC932288314F0061AC75 /* MYImageEditor */ = {
 			isa = PBXGroup;
 			children = (
+				F524BCA6228831C40061AC75 /* AppDelegate */,
 				F524BCAA2288320B0061AC75 /* Business */,
 				F524BCA7228831DA0061AC75 /* Base */,
-				F524BCA6228831C40061AC75 /* AppDelegate */,
 				F524BC9B228831500061AC75 /* Assets.xcassets */,
 				F524BC9D228831500061AC75 /* LaunchScreen.storyboard */,
 				F524BCA0228831500061AC75 /* Info.plist */,
@@ -131,7 +131,6 @@
 				A04D23958B040FD27E4DE96A /* Pods-MYImageEditor.debug.xcconfig */,
 				3862E1707679A051255F59A0 /* Pods-MYImageEditor.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

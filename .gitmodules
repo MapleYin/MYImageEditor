@@ -1,0 +1,3 @@
+[submodule "Felidae"]
+	path = Felidae
+	url = git@github.com:STAngerCat/Felidae.git
