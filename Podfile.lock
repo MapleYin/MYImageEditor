@@ -1,16 +1,23 @@
 PODS:
+  - Felidae (0.1.0)
   - SnapKit (5.0.0)
 
 DEPENDENCIES:
+  - Felidae (from `./Felidae/Felidae.podspec`)
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - SnapKit
 
+EXTERNAL SOURCES:
+  Felidae:
+    :path: "./Felidae/Felidae.podspec"
+
 SPEC CHECKSUMS:
+  Felidae: 96280563af690ef960c8bf4f0c23077058e6540d
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
 
-PODFILE CHECKSUM: 7f83dacd736302bbe0628f03b0f173da7c2bc9ae
+PODFILE CHECKSUM: 0ee48ed8e022354460fec6c7c38d52a33024ae85
 
 COCOAPODS: 1.6.1

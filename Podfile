@@ -6,7 +6,11 @@ target 'MYImageEditor' do
   use_frameworks!
 
   # Pods for MYImageEditor
-
+  
+  # Base Pod
+  pod 'Felidae', :path => './Felidae/Felidae.podspec'
+  
+  # Third Pod
   pod 'SnapKit', '~> 5.0.0'
 
 end

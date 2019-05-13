@@ -17,6 +17,19 @@
 		F524BCB22288354E0061AC75 /* MYIEFunctionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F524BCB12288354E0061AC75 /* MYIEFunctionListController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F5E693772288738E00D8A600 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3862E1707679A051255F59A0 /* Pods-MYImageEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYImageEditor.release.xcconfig"; path = "Target Support Files/Pods-MYImageEditor/Pods-MYImageEditor.release.xcconfig"; sourceTree = "<group>"; };
 		A04D23958B040FD27E4DE96A /* Pods-MYImageEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYImageEditor.debug.xcconfig"; path = "Target Support Files/Pods-MYImageEditor/Pods-MYImageEditor.debug.xcconfig"; sourceTree = "<group>"; };
@@ -30,6 +43,7 @@
 		F524BCAC228832760061AC75 /* MYIEBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYIEBaseViewController.swift; sourceTree = "<group>"; };
 		F524BCAF228834F00061AC75 /* MYImageJoinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYImageJoinController.swift; sourceTree = "<group>"; };
 		F524BCB12288354E0061AC75 /* MYIEFunctionListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYIEFunctionListController.swift; sourceTree = "<group>"; };
+		F5E693682288738E00D8A600 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				D4088CDA1E4EA500DF3633DE /* Pods_MYImageEditor.framework */,
+				F5E693682288738E00D8A600 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,6 +161,7 @@
 				F524BC8E2288314F0061AC75 /* Frameworks */,
 				F524BC8F2288314F0061AC75 /* Resources */,
 				3017DE1DE1177FBBDAF843E8 /* [CP] Embed Pods Frameworks */,
+				F5E693772288738E00D8A600 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -211,12 +227,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MYImageEditor/Pods-MYImageEditor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Felidae/Felidae.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Felidae.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +416,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZEKMY4ZK97;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = MYImageEditor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -417,6 +437,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZEKMY4ZK97;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = MYImageEditor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

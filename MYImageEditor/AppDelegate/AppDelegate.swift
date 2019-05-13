@@ -17,8 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        
-        let rootController = MYIENavigationController(rootViewController: MYIEFunctionListController())
+        //
+        // MYIEFunctionListController
+        let rootController = MYIENavigationController(rootViewController: MYImageJoinController())
         
         self.window?.rootViewController = rootController
         self.window?.makeKeyAndVisible()
